@@ -1,0 +1,60 @@
+body{
+    background: #eefee6;
+}
+div.process{
+    width: 100%;
+}
+h1,p{
+    text-align: center;
+    margin:10px auto;
+}
+.yinyang1{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96px;
+    box-sizing: content-box;
+    height: 48px;
+    background: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+}
+.yinyang-border{
+    border-radius: 100%;
+}
+.yinyang-position{
+    position: relative;
+}
+.yinyang-position:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background: white;
+    border: 18px solid black;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    box-sizing: content-box;
+}
+.yinyang-position:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: -50%;
+    background: black;
+    border: 18px solid white;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    box-sizing: content-box;
+}
+#yinyang:before{
+    top:50%;
+    left:0%;
+}
+#yinyang:after{
+    top: 50%;
+    left: 50%;
+}
